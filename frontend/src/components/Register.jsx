@@ -97,9 +97,7 @@ const Register = () => {
                         <label style={{ display: "block", fontWeight: "600", marginBottom: "8px", fontSize: "15px" }}>name</label>
                         <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
                             <input name="name" value={form.name} onChange={onChange} placeholder="닉네임" style={{ flex: 1, padding: "14px", borderRadius: "12px", border: "1px solid #e2e8f0", fontSize: "16px", outline: "none", boxShadow: "inset 0 1px 3px rgba(0,0,0,0.05)" }} />
-                            <button type="button" onClick={checkNameDuplicate} style={{ padding: "8px 12px", borderRadius: "12px", border: "none", background: "#3b82f6", color: "#fff", cursor: "pointer" }}>
-                                중복확인
-                            </button>
+                          
                         </div>
                         {nameCheckMsg && <p style={{ marginTop: "6px", fontSize: "14px", color: nameCheckMsg.includes("✅") ? "green" : "red" }}>{nameCheckMsg}</p>}
                     </div>
