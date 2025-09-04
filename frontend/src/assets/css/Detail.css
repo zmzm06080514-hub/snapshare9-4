@@ -1,0 +1,115 @@
+.detail-page {
+  width: 100%;
+  margin: 28px 0;
+  padding: 0 24px;
+}
+
+.detail-page h2 {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+}
+
+/* Detail 전용 테이블 */
+.detail-page .detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.detail-page .detail-table tbody tr {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  border-bottom: 1px solid #f1f5f9;
+}
+.detail-page .detail-table tbody tr:last-child { border-bottom: 0; }
+.detail-page .detail-table td { padding: 12px 12px; }
+.detail-page .detail-table td:first-child {
+  background: #f8fafc;
+  color: #334155;
+  font-weight: 600;
+}
+
+.detail-page img {
+  display: block;
+  max-width: 520px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.detail-page button {
+  margin-top: 12px;
+  margin-right: 8px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  cursor: pointer;
+}
+.detail-page button:hover { background: #f8fafc; }
+
+.comment-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr auto;
+  gap: 8px;
+  margin: 12px 0;
+}
+.comment-form input {
+  height: 38px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.comment-form button {
+  height: 38px;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  border: none;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+  display: grid;
+  gap: 10px;
+}
+.comment-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+}
+.comment-meta { display: grid; gap: 6px; }
+.comment-meta > b { color: #0f172a; }
+.comment-meta > span { color: #64748b; font-size: 12px; }
+.comment-contents { color: #334155; }
+
+.comment-actions button {
+  margin-top: 6px;
+  padding: 6px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+.comment-delete_box {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.comment-delete_box input {
+  flex: 1;
+  height: 36px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.no-comments {
+  color: #64748b;
+  text-align: center;
+  padding: 12px 0;
+}

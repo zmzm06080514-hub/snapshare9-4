@@ -1,0 +1,188 @@
+/* ===== 공통 레이아웃 ===== */
+.detail-page h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #1f2937;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.detail-page h3 {
+  margin: 20px 0 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* ===== 게시물 상세 표 ===== */
+.detail-page tbody {
+  display: table;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 16px;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 15px;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.detail-page tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+.detail-page tbody td {
+  padding: 12px;
+}
+.detail-page tbody td:first-child {
+  width: 140px;
+  background: #f9fafb;
+  font-weight: 600;
+  text-align: center;
+  color: #111827;
+}
+.detail-page tbody img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== 버튼 (상세 화면 한정) ===== */
+.detail-page button {
+  font-size: 14px;
+  padding: 8px 14px;
+  margin: 4px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.detail-page button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.detail-page button:active {
+  transform: translateY(0);
+}
+
+/* 수정/삭제 전용 버튼(명시적 클래스 사용) */
+.detail-page .btn-edit {
+  background: #3b82f6;
+  color: #fff;
+}
+.detail-page .btn-edit:hover {
+  background: #2563eb;
+}
+.detail-page .btn-delete {
+  background: #ef4444;
+  color: #fff;
+}
+.detail-page .btn-delete:hover {
+  background: #dc2626;
+}
+
+/* ===== 비밀번호 입력창 (수정/삭제) ===== */
+.detail-page input[type="text"],
+.detail-page input[type="password"] {
+  padding: 6px 8px;
+  margin-right: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+.detail-page input:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* ===== 댓글 작성 폼 ===== */
+.detail-page .comment-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px auto 24px;
+  max-width: 960px;
+}
+.detail-page .comment-form input {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.detail-page .comment-form input[name="writer"] {
+  width: 100px;
+}
+.detail-page .comment-form input[name="pass"] {
+  width: 120px;
+}
+.detail-page .comment-form input[name="contents"] {
+  flex: 1;
+}
+.detail-page .comment-form button {
+  background: #10b981;
+  color: white;
+  border: none;
+}
+.detail-page .comment-form button:hover {
+  background: #059669;
+}
+
+/* ===== 댓글 목록 ===== */
+.detail-page .comment-list {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.detail-page .comment-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 12px;
+}
+.detail-page .comment-meta {
+  min-width: 180px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+.detail-page .comment-contents {
+  flex: 1;
+  color: #111827;
+  word-break: break-word;
+}
+.detail-page .comment-actions button {
+  background: #f59e0b;
+  color: white;
+}
+.detail-page .comment-actions button:hover {
+  background: #d97706;
+}
+
+/* ===== 댓글 삭제 확인 박스 ===== */
+.detail-page .comment-delete-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+}
+.detail-page .comment-delete-box input {
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+.detail-page .comment-delete-box button {
+  background: #9ca3af;
+  color: white;
+}
+.detail-page .comment-delete-box button:hover {
+  background: #6b7280;
+}
+
+/* 댓글 없음 */
+.detail-page .no-comments {
+  padding: 14px;
+  text-align: center;
+  color: #9ca3af;
+}

@@ -1,0 +1,103 @@
+/* 페이지 여백과 정렬 */
+.list-page h2 {
+  margin: 20px 0;
+  color: #0f172a;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+/* 기본 테이블: 화면 가로 100% 사용 */
+.list-page table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 15px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* 헤더 */
+.list-page thead th {
+  background: #f3f4f6;
+  color: #111827;
+  padding: 12px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+/* 데이터 셀 */
+.list-page tbody td {
+  padding: 12px;
+  text-align: center;
+  color: #374151;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* 제목(링크) 강조 */
+.list-page tbody td a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+.list-page tbody td a:hover {
+  text-decoration: underline;
+}
+
+/* 홀짝 줄 배경 */
+.list-page tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* 행 호버 효과 */
+.list-page tbody tr:hover {
+  background: #eef2ff;
+}
+
+/* 긴 텍스트 줄바꿈 */
+.list-page td,
+.list-page th {
+  word-break: break-word;
+}
+
+/* list.css에 추가 */
+.list-meta {
+  margin: 8px 0 12px;
+  color: #6b7280;
+}
+.pagination {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 14px;
+}
+.pagination button {
+  padding: 6px 10px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.pagination button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.pagination button.active,
+.pagination button[aria-current="page"] {
+  font-weight: 700;
+  border-color: #94a3b8;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .list-page table {
+    font-size: 13px;
+  }
+  .list-page thead th,
+  .list-page tbody td {
+    padding: 8px;
+  }
+}

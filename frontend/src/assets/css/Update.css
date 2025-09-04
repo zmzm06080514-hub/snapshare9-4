@@ -1,0 +1,32 @@
+.update-page {
+  width: 100%;
+  margin: 28px 0;
+  padding: 22px 24px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(2,6,23,.05);
+}
+
+.update-page h2 { margin-top: 0; }
+
+.update-page form { display: grid; gap: 12px; }
+
+.update-page input[type="text"] {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+}
+
+.update-page input[type="submit"] {
+  height: 42px;
+  border: none;
+  border-radius: 12px;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+}
+.update-page input[type="submit"]:hover {
+  background: #0b1220;
+}
