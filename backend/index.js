@@ -6,8 +6,8 @@ import path from "path"     //경로 관련 유틸리티 (확장자추출, 경�
 import { fileURLToPath } from "url" // __filename, __dirname  
 import fs from "fs"     //파일 시스템 접근
 import bcrypt from "bcrypt"
-
-
+import dotenv from "dotenv";
+dotenv.config();
 
 
 const app = express();
@@ -44,11 +44,11 @@ const upload = multer({storage});
 
 // 커넥션 풀 설정
 const pool = mysql.createPool({
-    host:"database-1.cdwqyssi0je0.ap-northeast-2.rds.amazonaws.com",
-    user:"user_ex",
-    password:"1234",
-    port:"3306",
-    database:"db_ex",
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWWORD,
+    port: process.env.PORT,
+    database: process.env.DATABASE,
     connectionLimit:10,
     dateStrings:true
 });
@@ -179,11 +179,11 @@ app.post("/api/login", async(req, res)=>{
 //////////////////////////////////////////////////////////////////////////////
 
 const db = mysql.createConnection({
-    host: "database-1.cdwqyssi0je0.ap-northeast-2.rds.amazonaws.com",
-    user:"user_ex",
-    password:"1234",
-    port:"3306",
-    database:"db_ex"
+    host:process.env.HOST,
+    user:process.env.USER,
+    password:process.env.PASSWORD,
+    port:process.env.PORT,
+    database:process.env.DATABASE
 });
 
 db.connect(err =>{
