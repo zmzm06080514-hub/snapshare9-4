@@ -322,5 +322,5 @@ app.post("/board/save", upload.single("image"),(req,res)=>{
 
 
 app.listen(8000, ()=>{
-    console.log("서버 가동!111");
+    console.log("서버 가동!111222");
 })
