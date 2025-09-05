@@ -1,13 +1,16 @@
 # Node modules
 frontend/node_modules/
 backend/node_modules/
+
 # Vite build output
 frontend/dist/
 frontend/.vite/
 frontend/.vite-cache/
+
 # Backend build output
 backend/dist/
 backend/build/
+
 # Logs
 *.log
 npm-debug.log*
@@ -28,6 +31,7 @@ Desktop.ini
 # IDE settings
 .vscode/
 .idea/
+
 # 기타
 *.sqlite
 *.db
